@@ -13,12 +13,17 @@ function age(){
 function reset(){
   document.getElementById('ageInDays').remove();
 }
+
+//Challenge 2: Generate Cat
+
 function generateCat(){
   var image=document.createElement('img');
   var div=document.getElementById('flex-cat-generator');
   image.src="http://thecatapi.com/api/images/get?format=src&type=gif&size=small";
   div.appendChild(image);
 }
+
+//Challenge 3: Rock paper scissor game
 
 function rpsGame(yourChoice){
   var humanChoice, botChoice;
@@ -85,7 +90,8 @@ function rpsFrontEnd(humanImage, botImage, finalMessage) {
   document.getElementById('flex-box-rps-div').appendChild(botDiv);
 }
 
-//change color of all the buttons
+//Challenge 4:change color of all the buttons
+
 var all_buttons=document.getElementsByTagName('button');
 console.log(all_buttons);
 
@@ -141,7 +147,9 @@ function randomColors() {
   }
 
 }
-//Challenge 5
+
+//Challenge 5: Blackjack game
+
 let blackjackGame={
   'you':{'scoreSpan':'#your-blackjack-result','div':'#your-box','score':0},
   'dealer':{'scoreSpan':'#dealer-blackjack-result','div':'#dealer-box','score':0},
